@@ -46,6 +46,11 @@
   line-height: 1.8;
 }
 
+.hero-evolution {
+  margin-top: 12px;
+  color: #94a3b8;
+}
+
 .hero-actions {
   display: flex;
   gap: 16px;
@@ -103,3 +108,4 @@
     width: 100%;
   }
 }
+

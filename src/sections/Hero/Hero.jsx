@@ -4,6 +4,7 @@ function Hero() {
   return (
     <section id="top" className="hero">
       <div className="hero-content">
+
         <p className="hero-intro">Olá, eu sou</p>
 
         <h1>
@@ -13,9 +14,15 @@ function Hero() {
         <h2>Analista de Suporte &amp; Infraestrutura</h2>
 
         <p className="hero-description">
-          Profissional de tecnologia com experiência em suporte,
-          infraestrutura e ambientes corporativos, em constante evolução
-          para desenvolvimento, automação, Cloud e SRE.
+          Profissional de Tecnologia da Informação com uma trajetória
+          construída desde 2010 em suporte técnico, infraestrutura,
+          atendimento a usuários e ambientes corporativos.
+        </p>
+
+        <p className="hero-description hero-evolution">
+          Atualmente ampliando meus conhecimentos em desenvolvimento,
+          automação, Cloud, observabilidade e SRE por meio de estudos
+          e projetos práticos.
         </p>
 
         <div className="hero-actions">
@@ -23,10 +30,11 @@ function Hero() {
             Ver projetos
           </a>
 
-          <a href="#contact" className="btn btn-secondary">
-            Entre em contato
+          <a href="#experience" className="btn btn-secondary">
+            Minha trajetória
           </a>
         </div>
+
       </div>
     </section>
   )

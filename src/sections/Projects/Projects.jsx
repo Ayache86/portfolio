@@ -4,23 +4,56 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="projects-container">
+
         <div className="section-header">
           <p className="section-label">Projetos</p>
 
-          <h2>Projetos em desenvolvimento</h2>
+          <h2>Transformando conhecimento em prática</h2>
 
           <p>
-            Projetos utilizados para aplicar na prática conhecimentos de
-            infraestrutura, desenvolvimento, automação, observabilidade,
-            Cloud e inteligência artificial.
+            Projetos pessoais utilizados para estudar, experimentar,
+            documentar e aplicar tecnologias em cenários práticos.
           </p>
         </div>
 
         <div className="projects-grid">
+
+          {/* PORTFÓLIO */}
           <article className="project-card project-featured">
             <div className="project-top">
-              <span className="project-status">Em desenvolvimento</span>
+              <span className="project-status project-status-active">
+                Ativo
+              </span>
+
               <span className="project-number">01</span>
+            </div>
+
+            <h3>Portfólio Profissional</h3>
+
+            <p className="project-description">
+              Desenvolvimento deste portfólio profissional como aplicação
+              prática de desenvolvimento web, versionamento de código,
+              responsividade e publicação de aplicações.
+            </p>
+
+            <div className="project-tags">
+              <span>React</span>
+              <span>Vite</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+          </article>
+
+          {/* L.E.O.N.A. */}
+          <article className="project-card">
+            <div className="project-top">
+              <span className="project-status">
+                Em desenvolvimento
+              </span>
+
+              <span className="project-number">02</span>
             </div>
 
             <h3>Projeto L.E.O.N.A.</h3>
@@ -30,8 +63,8 @@ function Projects() {
             </p>
 
             <p className="project-description">
-              Projeto de assistente inteligente desenvolvido para explorar
-              automação, integrações, APIs, inteligência artificial e
+              Projeto de assistente pessoal inteligente voltado à exploração
+              de automação, integrações, APIs, inteligência artificial e
               interação entre diferentes dispositivos e serviços.
             </p>
 
@@ -43,17 +76,22 @@ function Projects() {
             </div>
           </article>
 
+          {/* HOME LAB */}
           <article className="project-card">
             <div className="project-top">
-              <span className="project-status">Planejamento</span>
-              <span className="project-number">02</span>
+              <span className="project-status project-status-planned">
+                Planejado
+              </span>
+
+              <span className="project-number">03</span>
             </div>
 
             <h3>Home Lab</h3>
 
             <p className="project-description">
-              Ambiente de laboratório dedicado a estudos e experimentação
-              com infraestrutura, redes, servidores, virtualização e Linux.
+              Ambiente de laboratório planejado para experimentação com
+              servidores, Linux, redes, virtualização e serviços de
+              infraestrutura.
             </p>
 
             <div className="project-tags">
@@ -64,32 +102,40 @@ function Projects() {
             </div>
           </article>
 
+          {/* OBSERVABILITY */}
           <article className="project-card">
             <div className="project-top">
-              <span className="project-status">Planejamento</span>
-              <span className="project-number">03</span>
+              <span className="project-status project-status-planned">
+                Planejado
+              </span>
+
+              <span className="project-number">04</span>
             </div>
 
             <h3>Observability Lab</h3>
 
             <p className="project-description">
-              Laboratório dedicado ao estudo de monitoramento,
-              observabilidade, métricas, logs e acompanhamento da
-              disponibilidade de serviços.
+              Laboratório planejado para estudos de monitoramento,
+              métricas, logs, disponibilidade de serviços e práticas
+              de observabilidade.
             </p>
 
             <div className="project-tags">
               <span>Zabbix</span>
               <span>Grafana</span>
-              <span>ELK Stack</span>
               <span>Elasticsearch</span>
+              <span>ELK Stack</span>
             </div>
           </article>
 
+          {/* N.E.X.U.S. */}
           <article className="project-card">
             <div className="project-top">
-              <span className="project-status">Ativo</span>
-              <span className="project-number">04</span>
+              <span className="project-status project-status-active">
+                Ativo
+              </span>
+
+              <span className="project-number">05</span>
             </div>
 
             <h3>PROJECT N.E.X.U.S.</h3>
@@ -99,8 +145,9 @@ function Projects() {
             </p>
 
             <p className="project-description">
-              Projeto de comunidade digital reunindo tecnologia, games,
-              conteúdo, projetos e espaços de colaboração e interação.
+              Projeto de organização e desenvolvimento de uma comunidade
+              digital reunindo tecnologia, games, criação de conteúdo,
+              projetos e espaços de colaboração.
             </p>
 
             <div className="project-tags">
@@ -110,6 +157,7 @@ function Projects() {
               <span>Organização</span>
             </div>
           </article>
+
         </div>
       </div>
     </section>

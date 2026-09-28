@@ -4,77 +4,104 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
+
         <div className="contact-content">
-          <p className="section-label">Contato</p>
 
-          <h2>Vamos conversar?</h2>
+          <div className="contact-text">
+            <p className="section-label">Contato</p>
 
-          <p className="contact-description">
-            Estou aberto a novas conexões, oportunidades profissionais
-            e conversas sobre tecnologia, infraestrutura, desenvolvimento,
-            automação e Cloud.
-          </p>
-
-          <div className="contact-links">
-            <a
-              href="https://www.linkedin.com/in/brunoayache"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link"
-            >
-              <span className="contact-link-label">LinkedIn</span>
-              <span className="contact-arrow">↗</span>
-            </a>
-
-            <a
-              href="https://github.com/Ayache86"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link"
-            >
-              <span className="contact-link-label">GitHub</span>
-              <span className="contact-arrow">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div className="contact-terminal">
-          <div className="terminal-header">
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <p>contact.sh</p>
-          </div>
-
-          <div className="terminal-body">
-            <p>
-              <span className="terminal-prompt">$</span> whoami
-            </p>
-
-            <p className="terminal-result">Bruno Ayache</p>
+            <h2>Vamos conversar?</h2>
 
             <p>
-              <span className="terminal-prompt">$</span> status
-            </p>
-
-            <p className="terminal-result">
-              Evoluindo em tecnologia...
+              Estou sempre aberto a novas conexões profissionais,
+              oportunidades e conversas sobre tecnologia, infraestrutura,
+              desenvolvimento, Cloud, automação e observabilidade.
             </p>
 
             <p>
-              <span className="terminal-prompt">$</span> focus
+              Você pode entrar em contato comigo pelo LinkedIn,
+              GitHub ou e-mail.
             </p>
 
-            <p className="terminal-result">
-              Cloud | Automação | Observabilidade | SRE
-            </p>
+            <div className="contact-actions">
 
-            <p className="terminal-current">
-              <span className="terminal-prompt">$</span>
-              <span className="terminal-cursor"></span>
-            </p>
+              <a
+                href="https://www.linkedin.com/in/brunoayache"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-button contact-primary"
+              >
+                LinkedIn
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://github.com/Ayache86"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-button"
+              >
+                GitHub
+                <span>↗</span>
+              </a>
+
+              <a
+                href="mailto:ayache.bruno@gmail.com"
+                className="contact-button"
+              >
+                E-mail
+                <span>→</span>
+              </a>
+
+            </div>
           </div>
+
+          <div className="contact-terminal">
+
+            <div className="terminal-header">
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <p>bruno@portfolio:~</p>
+            </div>
+
+            <div className="terminal-body">
+              <p>
+                <span className="terminal-symbol">$</span>
+                {' '}whoami
+              </p>
+
+              <p className="terminal-result">
+                Bruno Ayache
+              </p>
+
+              <p>
+                <span className="terminal-symbol">$</span>
+                {' '}cat focus.txt
+              </p>
+
+              <p className="terminal-result">
+                Cloud · Automação · Observabilidade · Desenvolvimento · SRE
+              </p>
+
+              <p>
+                <span className="terminal-symbol">$</span>
+                {' '}status
+              </p>
+
+              <p className="terminal-success">
+                Disponível para novas conexões profissionais.
+              </p>
+
+              <p className="terminal-command">
+                <span className="terminal-symbol">$</span>
+                <span className="terminal-cursor"></span>
+              </p>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>

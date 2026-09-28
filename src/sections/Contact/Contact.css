@@ -1,3 +1,7 @@
+/* ================================
+   CONTACT
+================================ */
+
 .contact {
   display: flex;
   align-items: center;
@@ -7,7 +11,9 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+}
 
+.contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -15,78 +21,129 @@
   align-items: center;
 }
 
-.contact-content h2 {
-  margin-bottom: 20px;
+
+/* ================================
+   TEXT
+================================ */
+
+.contact-text h2 {
+  margin-bottom: 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
 }
 
-.contact-description {
+.contact-text > p:not(.section-label) {
   max-width: 600px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 
-  font-size: 1.05rem;
+  color: #94a3b8;
+
+  line-height: 1.8;
 }
 
-.contact-links {
+
+/* ================================
+   BUTTONS
+================================ */
+
+.contact-actions {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 35px;
 }
 
-.contact-link {
-  display: flex;
+.contact-button {
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
 
-  min-width: 150px;
-  padding: 14px 18px;
+  gap: 25px;
 
-  color: #e5e7eb;
+  padding: 12px 18px;
+
+  color: #cbd5e1;
+
   background: rgba(255, 255, 255, 0.03);
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
-.contact-link:hover {
-  color: #38bdf8;
+.contact-button:hover {
+  transform: translateY(-2px);
+
+  color: #ffffff;
 
   border-color: rgba(56, 189, 248, 0.4);
 
-  transform: translateY(-3px);
+  background: rgba(56, 189, 248, 0.05);
 }
 
-.contact-arrow {
+.contact-button span {
   color: #38bdf8;
-  font-size: 1.1rem;
 }
+
+.contact-primary {
+  color: #08111f;
+  background: #38bdf8;
+
+  border-color: #38bdf8;
+
+  font-weight: 700;
+}
+
+.contact-primary:hover {
+  color: #08111f;
+  background: #7dd3fc;
+}
+
+
+/* ================================
+   TERMINAL
+================================ */
 
 .contact-terminal {
   overflow: hidden;
 
-  background: #060a12;
+  background: #070b14;
 
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: 12px;
 
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
 .terminal-header {
   display: flex;
   align-items: center;
-  gap: 7px;
 
-  padding: 12px 16px;
+  gap: 8px;
+
+  padding: 14px 18px;
 
   background: rgba(255, 255, 255, 0.04);
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.terminal-header span {
+.terminal-header > span {
   width: 10px;
   height: 10px;
 
-  background: #475569;
+  background: #334155;
 
   border-radius: 50%;
 }
@@ -96,45 +153,50 @@
 
   color: #64748b;
 
-  font-family: "Courier New", monospace;
-  font-size: 0.75rem;
+  font-family: monospace;
+  font-size: 0.8rem;
 }
 
 .terminal-body {
-  min-height: 300px;
+  min-height: 330px;
+
   padding: 30px;
 
-  font-family: "Courier New", monospace;
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 .terminal-body p {
   margin-bottom: 8px;
-
-  font-family: inherit;
-  font-size: 0.9rem;
 }
 
-.terminal-prompt {
-  margin-right: 8px;
-
+.terminal-symbol {
   color: #38bdf8;
 }
 
 .terminal-result {
-  margin-bottom: 22px !important;
-  padding-left: 20px;
+  margin-bottom: 20px !important;
+  padding-left: 17px;
 
-  color: #94a3b8 !important;
+  color: #94a3b8;
 }
 
-.terminal-current {
+.terminal-success {
+  margin-bottom: 20px !important;
+  padding-left: 17px;
+
+  color: #38bdf8;
+}
+
+.terminal-command {
   display: flex;
   align-items: center;
+
+  gap: 8px;
 }
 
 .terminal-cursor {
-  display: inline-block;
-
   width: 8px;
   height: 16px;
 
@@ -155,19 +217,38 @@
   }
 }
 
+
+/* ================================
+   RESPONSIVE
+================================ */
+
 @media (max-width: 900px) {
-  .contact-container {
+  .contact-content {
     grid-template-columns: 1fr;
     gap: 50px;
   }
 }
 
-@media (max-width: 500px) {
-  .contact-links {
+@media (max-width: 600px) {
+  .contact-actions {
     flex-direction: column;
   }
 
-  .contact-link {
+  .contact-button {
     width: 100%;
+  }
+
+  .terminal-body {
+    min-height: auto;
+
+    padding: 22px;
+
+    font-size: 0.8rem;
+
+    overflow-wrap: anywhere;
+  }
+
+  .terminal-header p {
+    font-size: 0.7rem;
   }
 }
